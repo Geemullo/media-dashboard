@@ -7,28 +7,20 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | [Media Dashboard]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src="script.js" defer></script>
 </head>
 <body>
   
   <div id="container">
     <div id="header">
       <div>
-        <h1>Media Dashboard</h1>
+        <h1>Social Media Dashboard</h1>
         <h4>Followers: 23,004</h4>
       </div>
-
+      
       <div id="dark-mode">
-        <h4>Dark Mode</h4>
-        <label class="switch">
-          <input type="checkbox">
-          <span class="slider"></span>
-        </label>
+        <h3>Dark Mode</h3>
+        <div class="toggle"></div>
       </div>
     </div>
     
@@ -37,32 +29,32 @@
         <div class="frame facebook"></div>
         <h3><img src="images/icon-facebook.svg">@nathanf</h3>
         <h2>1987</h2>
-        <h4>Followers</h4>
-        <h5><img src="images/icon-up.svg">12 Today</h5>
+        <h4>F O L L O W E R S</h4>
+        <h5 class="up"><img src="images/icon-up.svg">12 Today</h5>
       </div>
 
       <div class="medias">
         <div class="frame twitter"></div>
         <h3><img src="images/icon-twitter.svg">@nathanf</h3>
         <h2>1044</h2>
-        <h4>Followers</h4>
-        <h5><img src="images/icon-up.svg">99 Today</h5>
+        <h4>F O L L O W E R S</h4>
+        <h5 class="up"><img src="images/icon-up.svg">99 Today</h5>
       </div>
 
       <div class="medias">
         <div class="frame instagram"></div>
         <h3><img src="images/icon-instagram.svg">@realnathanf</h3>
         <h2>11k</h2>
-        <h4>Followers</h4>
-        <h5><img src="images/icon-up.svg">1099 Today</h5>
+        <h4>F O L L O W E R S</h4>
+        <h5 class="up"><img src="images/icon-up.svg">1099 Today</h5>
       </div>
 
       <div class="medias">
         <div class="frame youtube"></div>
         <h3><img src="images/icon-youtube.svg">Nathan F.</h3>
         <h2>8239</h2>
-        <h4>Subscribers</h4>
-        <h5><img src="images/icon-down.svg">144 Today</h5>
+        <h4>S U B S C R I B E R S</h4>
+        <h5 class="down"><img src="images/icon-down.svg">144 Today</h5>
       </div>
     </div>
     
@@ -72,60 +64,92 @@
     
     <div class="medias-infos">
       <div class="medias-statistic">
-        <h3>Page Views</h3>
-        <img src="/images/icon-facebook.svg">
-        <h2>87</h2>
-        <p><img src="images/icon-up.svg">3%</p>
+        <span>
+          <h3>Page Views</h3>
+          <img src="/images/icon-facebook.svg">
+        </span>
+        <span>
+          <h2>87</h2>
+          <h5 class="up"><img src="images/icon-up.svg">3%</h5>
+        </span>
       </div>
 
       <div class="medias-statistic">
-        <h3>Likes</h3>
-        <img src="/images/icon-facebook.svg">
-        <h2>52</h2>
-        <p><img src="images/icon-down.svg">2%</p>
+        <span>
+          <h3>Likes</h3>
+          <img src="/images/icon-facebook.svg">
+        </span>
+        <span>
+          <h2>52</h2>
+          <h5 class="down"><img src="images/icon-down.svg">2%</h5>
+        </span>
       </div>
 
       <div class="medias-statistic">
-        <h3>Likes</h3>
-        <img src="images/icon-instagram.svg">
-        <h2>5462</h2>
-        <p><img src="images/icon-up.svg">2257%</p>
+        <span>
+          <h3>Likes</h3>
+          <img src="images/icon-instagram.svg">
+        </span>
+        <span>
+          <h2>5462</h2>
+          <h5 class="up"><img src="images/icon-up.svg">2257%</h5>
+        </span>
       </div>
 
       <div class="medias-statistic">  
-        <h3>Profile Views</h3>
-        <img src="images/icon-instagram.svg">
-        <h2>52k</h2>
-        <p><img src="images/icon-up.svg">1375%</p>
+        <span>
+          <h3>Profile Views</h3>
+          <img src="images/icon-instagram.svg">
+        </span>
+        <span>
+          <h2>52k</h2>
+          <h5 class="up"><img src="images/icon-up.svg">1375%</h5>
+        </span>
       </div>
     </div>
     <div class="medias-infos">
       <div class="medias-statistic">
-        <h3>Retweets</h3>
-        <img src="images/icon-twitter.svg">
-        <h2>117</h2>
-        <p><img src="images/icon-up.svg">303%</p>
+        <span>
+          <h3>Retweets</h3>
+          <img src="images/icon-twitter.svg">
+        </span>
+        <span>
+          <h2>117</h2>
+          <h5 class="up"><img src="images/icon-up.svg">303%</h5>
+        </span>
       </div>
 
       <div class="medias-statistic">
-        <h3>Likes</h3>
-        <img src="images/icon-twitter.svg">
-        <h2>507</h2>
-        <p><img src="images/icon-up.svg">553%</p>
+        <span>
+          <h3>Likes</h3>
+          <img src="images/icon-twitter.svg">
+        </span>
+        <span>
+          <h2>507</h2>
+          <h5 class="up"><img src="images/icon-up.svg">553%</h5>
+        </span>
       </div>
 
       <div class="medias-statistic">
-        <h3>Likes</h3>
-        <img src="images/icon-youtube.svg">
-        <h2>107</h2>
-        <p><img src="images/icon-down.svg">19%</p>
+        <span>
+          <h3>Likes</h3>
+          <img src="images/icon-youtube.svg">
+        </span>
+        <span>
+          <h2>107</h2>
+          <h5 class="down"><img src="images/icon-down.svg">19%</h5>
+        </span>
       </div>
       
       <div class="medias-statistic">
-        <h3>Total Views</h3>
-        <img src="images/icon-youtube.svg">
-        <h2>1407</h2>
-        <p><img src="images/icon-down.svg">12%</p>
+        <span>
+          <h3>Total Views</h3>
+          <img src="images/icon-youtube.svg">
+        </span>
+        <span>
+          <h2>1407</h2>
+          <h5 class="down"><img src="images/icon-down.svg">12%</h5>
+        </span>
       </div>
     </div>
   </div>

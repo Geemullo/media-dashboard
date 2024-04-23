@@ -18,11 +18,13 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: gray;
+    background-color: hsl(0, 0%, 100%);
 }
+
 h1,h2 {
-    color: black;
+    color: hsl(230, 17%, 14%);
     font-weight: 700;
+    color: #1e202a;
 }
 
 h2 {
@@ -30,14 +32,23 @@ h2 {
 }
 
 h4 {
+    color: hsl(228, 12%, 44%);
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
+}
+
+h3 {
+    color: hsl(228, 12%, 44%);
+    font-size: 12px;
+}
+
+h5 {
+    font-size: 10px;
 }
 
 h3, h5 {
     display: flex;
     align-items: center;
-    font-size: 10px;
     img {
         margin-right: 4px;
     }
@@ -70,7 +81,7 @@ h5.down {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #dark-mode {
@@ -86,7 +97,7 @@ h5.down {
     height: 26px;
     position: relative;
     border-radius: 26px;
-    background-color: #ccd;
+    background-color: hsl(230, 22%, 74%);
     cursor: pointer;
     transition: background-color 0s;
 }
@@ -127,7 +138,7 @@ h5.down {
     flex-direction: column;
     width: 230px;
     height: 200px;
-    border-radius: 4px;
+    border-radius: 8px;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
@@ -137,7 +148,7 @@ h5.down {
 .frame {
     width: 100%;
     height: 4px;
-    border-radius: 8px 8px 0 0;
+    border-radius: 4px 4px 0 0;
 }
 
 .frame.facebook {
@@ -159,9 +170,12 @@ h5.down {
     display: flex;
     padding-left: 10px;
     width: 100%;
-    height: 50px;
+    height: 70px;
     justify-content: start;
     align-items: center;
+    h3 {
+        font-size: 24px;
+    }
 }
 
 .medias-infos {
@@ -178,7 +192,7 @@ h5.down {
     font-size: 12px;
     padding: 0 16px 0 16px;
     background-color: hsl(228, 100%, 98%);
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 .medias-statistic span {
@@ -192,9 +206,6 @@ h5.down {
     background-color: hsl(232, 33%, 91%);
 }
 
-
-
-
 .attribution { 
     font-size: 11px; 
     text-align: center; 
@@ -203,5 +214,65 @@ h5.down {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
-/* teste */
 
+/* troca de tema */
+
+.medias.dark {
+    background-color: hsl(228, 29%, 20%);
+    
+    h2 {
+        color: hsl(0, 0%, 100%);
+    }
+    h3, h4 {
+        color: hsl(228, 34%, 66%);
+    }
+}
+
+.medias.dark:hover {
+    background-color: hsl(228, 26%, 27%);
+}
+
+.medias.light {
+    background-color: hsl(225, 100%, 98%);
+
+    h2 {
+        color: hsl(230, 17%, 14%);
+    }
+    h3, h4 {
+        color: hsl(228, 12%, 44%);
+    }
+}
+
+.medias.light:hover {
+    background-color: hsl(232, 33%, 91%);
+}
+
+.medias-statistic.dark {
+    background-color: hsl(228, 29%, 20%);
+    
+    h2 {
+        color: hsl(0, 0%, 100%);
+    }
+    h3, h4 {
+        color: hsl(228, 34%, 66%);
+    }
+}
+
+.medias-statistic.dark:hover {
+    background-color: hsl(228, 26%, 27%);
+}
+
+.medias-statistic.light {
+    background-color: hsl(225, 100%, 98%);
+
+    h2 {
+        color: hsl(230, 17%, 14%);
+    }
+    h3, h4 {
+        color: hsl(228, 12%, 44%);
+    }
+}
+
+.medias-statistic.light:hover {
+    background-color: hsl(232, 33%, 91%);
+}

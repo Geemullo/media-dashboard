@@ -277,7 +277,7 @@ h5.down {
     background-color: hsl(232, 33%, 91%);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     
     #container {
         width: auto;

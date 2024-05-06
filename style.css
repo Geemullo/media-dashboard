@@ -277,6 +277,28 @@ h5.down {
     background-color: hsl(232, 33%, 91%);
 }
 
+@media (max-width: 768px) {
+    
+    #container {
+        width: auto;
+    }
+    
+    #social-media {
+        flex-wrap: wrap;
+    }
+    .medias {
+        margin-bottom: 20px;
+    }
+
+    .medias-infos {
+        flex-wrap: wrap;
+    }
+
+    .medias-statistic {
+        margin-bottom: 15px;
+    }
+}
+
 @media (max-width: 425px) {
     
     #container {
